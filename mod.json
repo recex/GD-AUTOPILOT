@@ -1,0 +1,60 @@
+{
+    "geode": "5.11.2",
+    "gd": {
+        "win": "2.2081",
+        "android": "2.2081",
+        "mac": "2.2081",
+        "ios": "2.2081"
+    },
+    "id": "gdautopilot.gd-autopilot",
+    "name": "GD AUTOPILOT",
+    "version": "v1.0.0",
+    "developer": "GD Autopilot Team",
+    "description": "Advanced AI Geometry Dash Level Completion Bot with real-time 240Hz physics prediction, multi-mode controllers, level analysis, adaptive learning, and an in-game Geode control suite.",
+    "repository": "https://github.com/your-username/gd-autopilot",
+    "tags": [
+        "gameplay",
+        "utility",
+        "interface"
+    ],
+    "dependencies": {
+        "geode.node-ids": ">=v1.23.3"
+    },
+    "settings": {
+        "auto-enable-on-enter": {
+            "type": "bool",
+            "name": "Auto-Start AI on Level Enter",
+            "description": "Automatically starts GD AUTOPILOT whenever you enter a level.",
+            "default": false
+        },
+        "show-hud-overlay": {
+            "type": "bool",
+            "name": "Show In-Game HUD Overlay",
+            "description": "Displays live AI activity, current mode, progress bar, and performance stats while playing.",
+            "default": true
+        },
+        "analysis-speed": {
+            "type": "int",
+            "name": "Analysis Speed Level",
+            "description": "Controls lookahead depth and simulation frequency (1 = Eco, 2 = Balanced, 3 = Aggressive, 4 = Ultra).",
+            "default": 2,
+            "min": 1,
+            "max": 4,
+            "control": {
+                "slider": true
+            }
+        },
+        "learning-enabled": {
+            "type": "bool",
+            "name": "Enable Adaptive Learning",
+            "description": "Records attempt outcomes and failure zones to adapt jump timings and reuse successful strategies.",
+            "default": true
+        },
+        "debug-logging": {
+            "type": "bool",
+            "name": "Verbose Debug Logging",
+            "description": "Logs detailed AI decisions, physics predictions, and pattern detections to Geode logs and the in-game console.",
+            "default": false
+        }
+    }
+}

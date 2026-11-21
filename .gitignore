@@ -1,0 +1,14 @@
+build/
+cmake-build-*/
+out/
+*.geode
+*.pdb
+*.o
+*.obj
+*.dll
+*.dylib
+*.so
+build_test_autopilot
+.DS_Store
+.vscode/
+.idea/
